@@ -140,8 +140,62 @@ nav {
     letter-spacing: 0.252px;
 }
 
+.more {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+}
 
+.features-container {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    margin: 50px 130px;
+}
 
+.features-title {
+    color: #0A0826;
+    font-family: Poppins;
+    font-size: 2rem;
+    font-weight: 700;
+
+}
+
+.features-description {
+    color: #6C6C6C;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-weight: 700;
+
+}
+
+.join-now {
+    border-radius: 1px;
+}
+
+footer {
+    background-color: #0A0826;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.footer-title {
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: Poppins;
+    padding: 20px;
+}
+
+#copyright {
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: Poppins;
+    padding: 5px;
+
+}
+
+/* responsive midea query for small device */
 
 @media screen and (max-width: 576px) {
     nav {
@@ -197,13 +251,36 @@ nav {
         gap: 20px;
 
     }
+
     .item-container-title {
         text-align: center;
         font-size: 1.5rem;
         font-weight: 600;
     }
-    .items-container{
+
+    .items-container {
         margin: 20px;
         justify-content: center;
+    }
+
+    .features-container {
+        flex-direction: column-reverse;
+        margin: 20px;
+    }
+
+    .features-img {
+        text-align: center;
+    }
+
+    #features-img {
+        width: 80%;
+    }
+
+    .features-info {
+        text-align: center;
+    }
+    .footer-title{
+        font-size: 1.5rem;
+        padding: 10px;
     }
 }
